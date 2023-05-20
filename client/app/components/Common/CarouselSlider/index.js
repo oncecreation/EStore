@@ -4,12 +4,12 @@
  *
  */
 
-import React from 'react';
+import React from "react";
 
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-const CarouselSlider = props => {
+const CarouselSlider = (props) => {
   const {
     swipeable,
     draggable,
@@ -20,7 +20,7 @@ const CarouselSlider = props => {
     autoPlaySpeed,
     ssr,
     responsive,
-    children
+    children,
   } = props;
 
   return (
@@ -34,11 +34,11 @@ const CarouselSlider = props => {
       autoPlaySpeed={autoPlaySpeed}
       ssr={ssr}
       responsive={responsive}
-      customTransition='all 1s'
+      customTransition="all 1s"
       transitionDuration={500}
-      containerClass='carousel-container'
-      dotListClass='carousel-dot-list-style'
-      itemClass='carousel-slider-item'
+      containerClass="carousel-container"
+      dotListClass="carousel-dot-list-style"
+      itemClass="carousel-slider-item"
     >
       {children}
     </Carousel>
@@ -53,7 +53,7 @@ CarouselSlider.defaultProps = {
   autoPlay: false,
   keyBoardControl: true,
   ssr: false,
-  autoPlaySpeed: 2000
+  autoPlaySpeed: 2000,
 };
 
 export default CarouselSlider;
